@@ -1,0 +1,22 @@
+{
+  "variables": [
+    {
+      "name": "contvarAppName",
+      "prompt": "What is your project name? e.g. myspringjwtexample"
+    },
+    {
+      "name": "contvarDomainName",
+      "prompt": "Specify domain name of the project? e.g. com.{your input}"
+    },
+    {
+      "name": "contvarX-Access-Token",
+      "prompt": "Specify access token response header name?",
+      "value": "X-Access-Token"
+    },
+    {
+      "name": "contvarX-Refresh-Token",
+      "prompt": "Specify refresh token response header name?",
+      "value": "X-Refresh-Token"
+    }
+  ]
+}
