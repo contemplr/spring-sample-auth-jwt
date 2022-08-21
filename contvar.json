@@ -2,21 +2,45 @@
   "variables": [
     {
       "name": "contvarAppName",
-      "prompt": "What is your project name? e.g. myspringjwtexample"
+      "prompt": "What is your project name? e.g. myspringjwtexample",
+      "checks": [
+        {
+          "check": "^[A-z]+$",
+          "error": "Project name must be only letters"
+        }
+      ]
     },
     {
       "name": "contvarDomainName",
-      "prompt": "Specify domain name of the project? e.g. com.{your input}"
+      "prompt": "Specify domain name of the project? e.g. com.{your input}",
+      "checks": [
+        {
+          "check": "^[A-z0-9]+$",
+          "error": "Project name must be only letters or numbers"
+        }
+      ]
     },
     {
       "name": "contvarX-Access-Token",
       "prompt": "Specify access token response header name?",
-      "value": "X-Access-Token"
+      "value": "X-Access-Token",
+      "checks": [
+        {
+          "check": "^[A-z-]+$",
+          "error": "Project name must be only letters and hyphen"
+        }
+      ]
     },
     {
       "name": "contvarX-Refresh-Token",
       "prompt": "Specify refresh token response header name?",
-      "value": "X-Refresh-Token"
+      "value": "X-Refresh-Token",
+      "checks": [
+        {
+          "check": "^[A-z-]+$",
+          "error": "Project name must be only letters and hyphen"
+        }
+      ]
     }
   ]
 }
